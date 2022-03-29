@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OSL School Tour</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-outside-school-entrance">
+        <li class="text">Outside School Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-school-entrance">
+        <li class="text">School Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-early-childhood---meadow-room">
+        <li class="text">Early Childhood - Meadow Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-outside-early-childhood">
+        <li class="text">Outside Early Childhood</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-early-childhood---forest-room">
+        <li class="text">Early Childhood - Forest Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-early-childhood---river-room">
+        <li class="text">Early Childhood - River Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-outside-kindergarten">
+        <li class="text">Outside Kindergarten</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-kindergarten-room">
+        <li class="text">Kindergarten Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-commons">
+        <li class="text">Commons</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-outside-first-grade">
+        <li class="text">Outside First Grade</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-first-grade-room">
+        <li class="text">First Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-outside-second-and-third">
+        <li class="text">Outside Second and Third</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-second-grade-room">
+        <li class="text">Second Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-third-grade-room">
+        <li class="text">Third Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-outside-fourth-and-fifth">
+        <li class="text">Outside Fourth and Fifth</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-fourth-grade-room">
+        <li class="text">Fourth Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-fifth-grade-room">
+        <li class="text">Fifth Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-outside-sixth-seventh-and-lsem">
+        <li class="text">Outside Sixth, Seventh and LSEM</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-sixth-grade-room">
+        <li class="text">Sixth Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-seventh-grade-room">
+        <li class="text">Seventh Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-lsem-room">
+        <li class="text">LSEM Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-outside-eighth">
+        <li class="text">Outside Eighth</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-eighth-grade-room">
+        <li class="text">Eighth Grade Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-church-lobby">
+        <li class="text">Church Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-library">
+        <li class="text">Library</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-music-room">
+        <li class="text">Music Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-sanctuary">
+        <li class="text">Sanctuary</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-church-entrance">
+        <li class="text">Church Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-outside-church-entrance">
+        <li class="text">Outside Church Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-office-hallway">
+        <li class="text">Office Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-gym-hallway">
+        <li class="text">Gym Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-gym">
+        <li class="text">Gym</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
