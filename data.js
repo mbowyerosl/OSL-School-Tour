@@ -196,6 +196,12 @@ var APP_DATA = {
           "pitch": -0.009215176104978795,
           "rotation": 0,
           "target": "6-outside-kindergarten"
+        },
+        {
+          "yaw": 3.1229350952252837,
+          "pitch": 0.04560525314660069,
+          "rotation": 0,
+          "target": "1-school-entrance"
         }
       ],
       "infoHotspots": []
