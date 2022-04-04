@@ -559,7 +559,7 @@ var APP_DATA = {
           "yaw": 0.03725825295498275,
           "pitch": 0.019304381678683313,
           "rotation": 0,
-          "target": "6-outside-kindergarten"
+          "target": "9-outside-first-grade"
         },
         {
           "yaw": 3.1318948525876715,
